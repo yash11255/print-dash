@@ -878,6 +878,69 @@
             .woocommerce-product-gallery {
                 opacity: 1 !important;
             }
+            .elementor-widget-container{
+                @media screen and (min-width: 759px) {
+                    position:absolute;
+                      
+}
+            }
+            .button-54{
+                position: relative;
+                top:0px;
+                right:0px;
+            }
+            /* From Uiverse.io by alexmaracinaru */ 
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
         </style>
     </noscript>
     <meta name="generator"
@@ -1080,10 +1143,10 @@
                                     <nav>                                    </nav>
 
 
-                                    <div class="haru-menu-toggle">
+                                    <!-- <div class="haru-menu-toggle">
                                         <i class="phosphor-list" aria-hidden="true"></i>
                                         <span class="elementor-screen-only">Menu</span>
-                                    </div>
+                                    </div> -->
                                     <nav class="haru-nav-menu--dropdown haru-nav-menu__container" aria-hidden="true">
                                         <!-- <div class="haru-nav-menu__title">Menu</div> -->
                                         <ul id="menu-2-65a9bf0" class="haru-nav-menu">
@@ -1262,49 +1325,41 @@
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-609242e e-con-full e-flex e-con e-child"
-                            data-id="609242e" data-element_type="container">
-                            <div class="elementor-element elementor-element-dbc9e1e elementor-hidden-desktop elementor-widget elementor-widget-haru-woo-search"
-                                data-id="dbc9e1e" data-element_type="widget" data-widget_type="haru-woo-search.default">
-                                <div class="elementor-widget-container">
+    data-id="609242e" data-element_type="container" style="display: flex; flex-wrap: wrap; align-items: center;">
 
-                                    <div class="haru-woo-search haru-woo-search--full_screen">
-                                        <div class="haru-woo-search__toggle" data-effect="mfp-zoom-in2">
-                                            <i class="phosphor phosphor-magnifying-glass"></i> <span
-                                                class="elementor-screen-only">Search</span>
-                                        </div>
-                                        <form class="haru-woo-search__form white-popup-block mfp-hide mfp-with-anim"
-                                            role="search" action="https://pricom.harutheme.com/creative" method="get">
-                                            <div class="haru-woo-search__container">
+    <div class="elementor-element elementor-element-dbc9e1e elementor-hidden-desktop elementor-widget elementor-widget-haru-woo-search"
+        data-id="dbc9e1e" data-element_type="widget" data-widget_type="haru-woo-search.default" style="flex: 1 1 auto;">
 
-                                                <input placeholder="Search..." class="haru-woo-search__input"
-                                                    autocomplete="off" type="search" name="s" title="Search" value="">
-                                                <input type="hidden" name="post_type" value="product">
+        <div class="elementor-widget-container">
+            <div class="haru-woo-search haru-woo-search--full_screen">
+                <div class="haru-woo-search__toggle" data-effect="mfp-zoom-in2">
+                    <i class="phosphor phosphor-magnifying-glass"></i> <span class="elementor-screen-only">Search</span>
+                </div>
+                <form class="haru-woo-search__form white-popup-block mfp-hide mfp-with-anim" role="search"
+                    action="https://pricom.harutheme.com/creative" method="get">
+                    <div class="haru-woo-search__container">
+                        <input placeholder="Search..." class="haru-woo-search__input" autocomplete="off" type="search"
+                            name="s" title="Search" value="">
+                        <input type="hidden" name="post_type" value="product">
+                        <button class="haru-woo-search__submit" type="submit" title="Search" aria-label="Search">
+                            <i class="phosphor phosphor-magnifying-glass"></i> <span class="elementor-screen-only">Search</span>
+                        </button>
+                        <div class="haru-woo-search__ajax-result"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-                                                <button class="haru-woo-search__submit" type="submit" title="Search"
-                                                    aria-label="Search">
-                                                    <i class="phosphor phosphor-magnifying-glass"></i> <span
-                                                        class="elementor-screen-only">Search</span>
-                                                </button>
+    <div class="elementor-widget-container" style="margin-top: 5px;  flex: 0 1 auto;">
 
+        <!-- <button class="button-54" role="button" style="margin-top: -4px; border:2px solid black; background-color: #d62121; padding: 10px 20px; text-align: center;">
+            <a href="https://api.whatsapp.com/send?phone=919717259392" style="color: white; text-decoration: none;">Contact</a>
+        </button> -->
+        <button class="button-54 " role="button" style="margin-top: -4px;padding: 0px 20px; text-align: center;", ><a href="https://api.whatsapp.com/send?phone=919717259392" style="color: white;">Contact</a></button>
+    </div>
+</div>
 
-
-                                                <div class="haru-woo-search__ajax-result"></div>
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                </div>
-                            </div>
-                            
-                         
-                            </div>
-                                <div class="elementor-widget-container" style="margin-top: 5px;">
-
-                                    <button class="button-54 " role="button" style="margin-top: -4px;", ><a href="https://api.whatsapp.com/send?phone=919717259392" style="color: white;">Contact</a></button>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1544,7 +1599,7 @@
 
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--add-to-cart">
                                                                                                 <a href="?add-to-cart=54"
                                                                                                     data-quantity="1"
@@ -1564,7 +1619,7 @@
                                                                                                     href="https://pricom.harutheme.com/creative/wp-admin/admin-ajax.php?ajax=true&#038;action=load_quickview_content&#038;product_id=54"><span
                                                                                                         class="haru-tooltip button-tooltip">Quick
                                                                                                         view</span></a>
-                                                                                            </div>
+                                                                                            </div> -->
                                                                                         </div>
 
                                                                                     </div>
@@ -1653,19 +1708,21 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                          
-                                                                                            <div
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--quickview">
                                                                                                 <a class="quickview"
                                                                                                     href="https://pricom.harutheme.com/creative/wp-admin/admin-ajax.php?ajax=true&#038;action=load_quickview_content&#038;product_id=63"><span
                                                                                                         class="haru-tooltip button-tooltip">Quick
                                                                                                         view</span></a>
-                                                                                            </div>
+                                                                                            </div> -->
                                                                                         </div>
 
                                                                                     </div>
+                                                                                       <a href="./pricom.harutheme.com copy/creative/product/invitation-cards-yellow/index.html">
 
+                                                                                     
                                                                                     <div class="product-info" >
-                                                                                        <a href="../../pricom.harutheme.com copy/creative/product/invitation-cards-yellow/index.html"
+                                                                                        <a href="./pricom.harutheme.com copy/creative/product/invitation-cards-yellow/index.html"
                                                                                             class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                                                                             <h2
                                                                                                 class="woocommerce-loop-product__title">
@@ -1691,7 +1748,7 @@
                                                                                                 etiam non augue lacus.
                                                                                             </p>
                                                                                         </div>
-                                                                                        <div
+                                                                                        <!-- <div
                                                                                             class="product-button product-button--add-to-cart">
                                                                                             <a href="?add-to-cart=63"
                                                                                                 data-quantity="1"
@@ -1703,8 +1760,9 @@
                                                                                                 rel="nofollow"><span
                                                                                                     class="haru-tooltip button-tooltip">Add
                                                                                                     to cart</span></a>
-                                                                                        </div>
+                                                                                        </div> -->
                                                                                     </div>
+                                                                                </a>
                                                                                 </div>
                                                                             </div>
                                                                             <div
@@ -1750,7 +1808,7 @@
 
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--add-to-cart">
                                                                                                 <a href="?add-to-cart=64"
                                                                                                     data-quantity="1"
@@ -1763,14 +1821,14 @@
                                                                                                         class="haru-tooltip button-tooltip">Add
                                                                                                         to
                                                                                                         cart</span></a>
-                                                                                            </div>
-                                                                                            <div
+                                                                                            </div> -->
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--quickview">
                                                                                                 <a class="quickview"
                                                                                                     href="https://pricom.harutheme.com/creative/wp-admin/admin-ajax.php?ajax=true&#038;action=load_quickview_content&#038;product_id=64"><span
                                                                                                         class="haru-tooltip button-tooltip">Quick
                                                                                                         view</span></a>
-                                                                                            </div>
+                                                                                            </div> -->
                                                                                         </div>
 
                                                                                     </div>
@@ -1804,7 +1862,7 @@
                                                                                                 etiam non augue lacus.
                                                                                             </p>
                                                                                         </div>
-                                                                                        <div
+                                                                                        <!-- <div
                                                                                             class="product-button product-button--add-to-cart">
                                                                                             <a href="?add-to-cart=64"
                                                                                                 data-quantity="1"
@@ -1816,7 +1874,7 @@
                                                                                                 rel="nofollow"><span
                                                                                                     class="haru-tooltip button-tooltip">Add
                                                                                                     to cart</span></a>
-                                                                                        </div>
+                                                                                        </div> -->
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1860,7 +1918,7 @@
 
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--add-to-cart">
                                                                                                 <a href="#"
                                                                                                     data-quantity="1"
@@ -1873,14 +1931,14 @@
                                                                                                         class="haru-tooltip button-tooltip">Add
                                                                                                         to
                                                                                                         cart</span></a>
-                                                                                            </div>
-                                                                                            <div
+                                                                                            </div> -->
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--quickview">
                                                                                                 <a class="quickview"
                                                                                                     href="#"><span
                                                                                                         class="haru-tooltip button-tooltip">Quick
                                                                                                         view</span></a>
-                                                                                            </div>
+                                                                                            </div> -->
                                                                                         </div>
 
                                                                                     </div>
@@ -1890,7 +1948,7 @@
                                                                                             class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                                                                             <h2
                                                                                                 class="woocommerce-loop-product__title">
-                                                                                                Stationery Bundels</h2>
+                                                                                                Stationery Bundles</h2>
                                                                                         </a>
                                                                                         <span class="price"><span
                                                                                                 class="woocommerce-Price-amount amount"><bdi><span
@@ -1911,7 +1969,7 @@
                                                                                                 etiam non augue lacus.
                                                                                             </p>
                                                                                         </div>
-                                                                                        <div
+                                                                                        <!-- <div
                                                                                             class="product-button product-button--add-to-cart">
                                                                                             <a href="#"
                                                                                                 data-quantity="1"
@@ -1923,7 +1981,7 @@
                                                                                                 rel="nofollow"><span
                                                                                                     class="haru-tooltip button-tooltip">Add
                                                                                                     to cart</span></a>
-                                                                                        </div>
+                                                                                        </div> -->
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1976,7 +2034,7 @@
 
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--add-to-cart">
                                                                                                 <a href="#"
                                                                                                     data-quantity="1"
@@ -1996,7 +2054,7 @@
                                                                                                     href="#"><span
                                                                                                         class="haru-tooltip button-tooltip">Quick
                                                                                                         view</span></a>
-                                                                                            </div>
+                                                                                            </div> -->
                                                                                         </div>
 
                                                                                     </div>
@@ -2030,7 +2088,7 @@
                                                                                                 etiam non augue lacus.
                                                                                             </p>
                                                                                         </div>
-                                                                                        <div
+                                                                                        <!-- <div
                                                                                             class="product-button product-button--add-to-cart">
                                                                                             <a href="?add-to-cart=72"
                                                                                                 data-quantity="1"
@@ -2042,7 +2100,7 @@
                                                                                                 rel="nofollow"><span
                                                                                                     class="haru-tooltip button-tooltip">Add
                                                                                                     to cart</span></a>
-                                                                                        </div>
+                                                                                        </div> -->
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -2086,7 +2144,7 @@
 
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--add-to-cart">
                                                                                                 <a href="?add-to-cart=73"
                                                                                                     data-quantity="1"
@@ -2099,14 +2157,14 @@
                                                                                                         class="haru-tooltip button-tooltip">Add
                                                                                                         to
                                                                                                         cart</span></a>
-                                                                                            </div>
-                                                                                            <div
+                                                                                            </div> -->
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--quickview">
                                                                                                 <a class="quickview"
                                                                                                     href="https://pricom.harutheme.com/creative/wp-admin/admin-ajax.php?ajax=true&#038;action=load_quickview_content&#038;product_id=73"><span
                                                                                                         class="haru-tooltip button-tooltip">Quick
                                                                                                         view</span></a>
-                                                                                            </div>
+                                                                                            </div> -->
                                                                                         </div>
 
                                                                                     </div>
@@ -2137,7 +2195,7 @@
                                                                                                 etiam non augue lacus.
                                                                                             </p>
                                                                                         </div>
-                                                                                        <div
+                                                                                        <!-- <div
                                                                                             class="product-button product-button--add-to-cart">
                                                                                             <a href="?add-to-cart=73"
                                                                                                 data-quantity="1"
@@ -2149,7 +2207,7 @@
                                                                                                 rel="nofollow"><span
                                                                                                     class="haru-tooltip button-tooltip">Add
                                                                                                     to cart</span></a>
-                                                                                        </div>
+                                                                                        </div> -->
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -2193,7 +2251,7 @@
 
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--add-to-cart">
                                                                                                 <a href="?add-to-cart=74"
                                                                                                     data-quantity="1"
@@ -2206,14 +2264,14 @@
                                                                                                         class="haru-tooltip button-tooltip">Add
                                                                                                         to
                                                                                                         cart</span></a>
-                                                                                            </div>
-                                                                                            <div
+                                                                                            </div> -->
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--quickview">
                                                                                                 <a class="quickview"
                                                                                                     href="https://pricom.harutheme.com/creative/wp-admin/admin-ajax.php?ajax=true&#038;action=load_quickview_content&#038;product_id=74"><span
                                                                                                         class="haru-tooltip button-tooltip">Quick
                                                                                                         view</span></a>
-                                                                                            </div>
+                                                                                            </div> -->
                                                                                         </div>
 
                                                                                     </div>
@@ -2300,7 +2358,7 @@
 
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div
+                                                                                            <!-- <div
                                                                                                 class="product-button product-button--add-to-cart">
                                                                                                 <a href="?add-to-cart=75"
                                                                                                     data-quantity="1"
@@ -2320,7 +2378,7 @@
                                                                                                     href="https://pricom.harutheme.com/creative/wp-admin/admin-ajax.php?ajax=true&#038;action=load_quickview_content&#038;product_id=75"><span
                                                                                                         class="haru-tooltip button-tooltip">Quick
                                                                                                         view</span></a>
-                                                                                            </div>
+                                                                                            </div> -->
                                                                                         </div>
 
                                                                                     </div>
@@ -2372,14 +2430,14 @@
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="product-control ">
+                                                                <!-- <div class="product-control ">
                                                                     <div class="product-control-item disable"
                                                                         data-max_pages="3" data-current_page="1"
                                                                         data-category="*" data-action="prev"></div>
                                                                     <div class="product-control-item" data-max_pages="3"
                                                                         data-current_page="1" data-category="*"
                                                                         data-action="next"></div>
-                                                                </div>
+                                                                </div> -->
 
                                                             </div>
 
@@ -3030,6 +3088,7 @@
         </div>
     </div>
     <div id="haru-bottom-toolbar" class="haru-toolbar--loading">
+        
         <div data-elementor-type="wp-post" data-elementor-id="17403" class="elementor elementor-17403">
             <div class="elementor-element elementor-element-ddc4531 e-con-full e-flex e-con e-parent" data-id="ddc4531"
                 data-element_type="container">
@@ -3039,7 +3098,7 @@
                         data-id="7db95da" data-element_type="widget" data-widget_type="haru-toolbar-link.default">
                         <div class="elementor-widget-container">
 
-                            <div class="haru-toolbar-link haru-toolbar-link--style-1">
+                            <!-- <div class="haru-toolbar-link haru-toolbar-link--style-1">
                                 <div class="haru-toolbar-link__icon">
                                     <a href="https://pricom.harutheme.com/shop/">
                                         <i aria-hidden="true" class="phosphor phosphor-squares-four"></i> </a>
@@ -3048,119 +3107,18 @@
                                 <div class="bottom-bar-title">Shop</div>
                                 <a class="bottom-bar-link" href="https://pricom.harutheme.com/shop/"></a>
 
-                            </div>
+                            </div> -->
+                             
+                            
+                           
+
 
                         </div>
                     </div>
                 </div>
-                <div class="elementor-element elementor-element-5611e2b e-con-full e-flex e-con e-child"
-                    data-id="5611e2b" data-element_type="container">
-                    <div class="elementor-element elementor-element-6bd6028 elementor-widget elementor-widget-haru-woo-account"
-                        data-id="6bd6028" data-element_type="widget" data-widget_type="haru-woo-account.default">
-                        <div class="elementor-widget-container">
-
-                            <div class="haru-account haru-account--style-4">
-                                <div class="haru-account__wrap">
-                                    <div class="haru-account__content logged-out">
-                                        <a href="https://pricom.harutheme.com/creative/my-account/"
-                                            class="haru-account__link">
-                                            <div class="bottom-bar-title">My account</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-d99aefc e-con-full e-flex e-con e-child"
-                    data-id="d99aefc" data-element_type="container">
-                    <div class="elementor-element elementor-element-c3be06e elementor-widget elementor-widget-haru-woo-cart"
-                        data-id="c3be06e" data-element_type="widget" data-widget_type="haru-woo-cart.default">
-                        <div class="elementor-widget-container">
-
-                            <div class="haru-cart haru-cart--style-3">
-                                <div class="haru-cart-wrap no-price">
-                                    <div class="haru-cart-opener">
-                                        <a href="https://pricom.harutheme.com/creative/cart/" title="Shopping cart">
-                                            <div class="haru-cart-icon"> <span class="haru-cart-number">0
-                                                    <span>items</span></span>
-                                            </div>
-                                            <div class="haru-cart-sub-total"> <span class="haru-cart-subtotal"><span
-                                                        class="woocommerce-Price-amount amount"><bdi><span
-                                                                class="woocommerce-Price-currencySymbol">&#36;</span>0.00</bdi>
-                                                    </span>
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="haru-cart-content">
-                                        <div class="widget_shopping_cart_content">
-                                            <div class="cart_list_wrap">
-                                                <div class="cart_list_content">
-                                                    <ul class="woocommerce-mini-cart cart_list product_list_widget ">
-                                                        <li class="empty">
-                                                            <h4>Empty cart</h4>
-                                                            <p class="woocommerce-mini-cart__empty-message">No products
-                                                                in the cart.</p>
-                                                            <a href="https://pricom.harutheme.com/creative/shop/"
-                                                                class="woocommerce-mini-cart__btn haru-button haru-button--bg-primary haru-button--round-normal haru-button--size-medium">Return
-                                                                to Shop</a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- end product list -->
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="bottom-bar-title">Cart</div>
-                                    <a href="https://pricom.harutheme.com/creative/cart/" class="bottom-bar-link"></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-9017451 e-con-full e-flex e-con e-child"
-                    data-id="9017451" data-element_type="container">
-                    <div class="elementor-element elementor-element-343550c elementor-widget elementor-widget-haru-woo-search"
-                        data-id="343550c" data-element_type="widget" data-widget_type="haru-woo-search.default">
-                        <div class="elementor-widget-container">
-
-                            <div class="haru-woo-search haru-woo-search--toolbar haru-woo-search--ajax-yes">
-                                <div class="haru-woo-search__toggle" data-effect="mfp-zoom-in2">
-                                    <i class="phosphor phosphor-magnifying-glass"></i> <span
-                                        class="elementor-screen-only">Search</span>
-                                    <div class="bottom-bar-title">Search</div>
-                                </div>
-                                <form class="ajax-search haru-woo-search__form white-popup-block mfp-hide mfp-with-anim"
-                                    data-hint-message="Please type at least 3 characters to search..."
-                                    data-search-count="3" role="search" action="https://pricom.harutheme.com/creative"
-                                    method="get">
-                                    <div class="haru-woo-search__container">
-
-                                        <input placeholder="Search..." class="haru-woo-search__input" autocomplete="off"
-                                            type="search" name="s" title="Search" value="">
-                                        <input type="hidden" name="post_type" value="product">
-
-                                        <button class="haru-woo-search__submit" type="submit" title="Search"
-                                            aria-label="Search">
-                                            <i class="phosphor phosphor-magnifying-glass"></i> <span
-                                                class="elementor-screen-only">Search</span>
-                                        </button>
-
-
-
-                                        <div class="haru-woo-search__ajax-result"></div>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+               
+               
+                
             </div>
         </div>
     </div>
